@@ -20,6 +20,12 @@ namespace Aufgabe_5
                 Console.Write(i + "|");
                 i += 2;
             }
+
+            //for(int q=-x; q <= x; q+=2)
+            //{
+            //    Console.WriteLine(q + "|");
+
+            //}
         }
     }
 }

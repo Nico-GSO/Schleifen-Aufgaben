@@ -11,19 +11,27 @@ namespace Aufgabe_8
 
             //Wählen Sie die passende Schleifenstruktur. Stellen Sie dies in einem PAP dar und erstellen Sie den Quellcode.
 
-            int x = 0;
+            int pin = 1234;
 
-            int i = -1;
+            int versuche = 0;
 
             Console.WriteLine("PIN eingeben: ");
             Convert.ToInt32(Console.ReadLine());
 
-            while (x != 1234)
+            do
             {
-                i = i + 1;
+
                 Console.WriteLine("PIN ist falsch");
-            }
-            Console.Write(i);
+                pin = Convert.ToInt32(Console.ReadLine());
+
+                if(versuche!=pin)
+                {
+                    versuche = versuche + 1;
+                }
+            } while (pin != 1234);
+
+                
+            Console.WriteLine("Ihr Pin ist richtig! Ihre Versuche sind {0}!",versuche);
 
         }
     }

@@ -11,7 +11,16 @@ namespace Aufgabe_7
 
             //Wählen Sie die passende Schleifenstruktur. Stellen Sie dies in einem PAP dar und erstellen Sie den Quellcode.
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine();
+            int n = Convert.ToInt32(Console.ReadLine());
+            int summe = 0;
+
+
+            for(int i =0; i<=n;i++)
+            {
+                summe = summe + i;
+                Console.WriteLine(summe);
+            }
         }
     }
 }

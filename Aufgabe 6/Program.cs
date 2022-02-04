@@ -11,7 +11,14 @@ namespace Aufgabe_6
 
             //Wählen Sie die passende Schleifenstruktur. Stellen Sie dies in einem PAP dar und erstellen Sie den Quellcode.
 
-            Console.WriteLine("Hello World!");
+            int eingabe = 0;
+
+            do
+            {
+                Console.WriteLine("Menü");
+                Console.WriteLine("Um das Programm zu beenden müssen sie 0 eingeben.");
+                eingabe = Convert.ToInt32(Console.ReadLine());
+            } while (eingabe!=0);
         }
     }
 }

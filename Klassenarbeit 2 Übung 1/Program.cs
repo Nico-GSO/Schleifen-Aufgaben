@@ -4,34 +4,82 @@ namespace Klassenarbeit_2_Übung_1
 {
     class Program
     {
-        static bool Main(string[] args)
+        static void Main(string[] args)
         {
-
-            double K = 0, K_Zinsen = 0, p = 0;
-            int jahre = 0;
+            double K = 0;
+            double Zinssatz = 0;
             int n = 0;
+            double Bilanz = 0;
+            double Zinsen = 0;
+            double K_Zinsen = 0;
+
+
 
             Console.WriteLine("Geben Sie ihr Kapital an: ");
             K = Convert.ToDouble(Console.ReadLine());
-            K_Zinsen = K;
+
+
 
             Console.WriteLine("Geben Sie ihren Zinssatz an: ");
-            p = Convert.ToDouble(Console.ReadLine());
+            Zinssatz = Convert.ToDouble(Console.ReadLine());
+
+
 
             Console.WriteLine("Geben sie ihre Anlagedauer ein: ");
             n = Convert.ToInt32(Console.ReadLine());
 
 
-            for (n <= 0) 
+
+            Console.WriteLine($"{"Jahr",4} {"Guthaben",10} {"Zinsen",8} {"K.Zinsen",10} {"Bilanz",8}");
+
+
+
+
+
+            for (int i = 1; i <= 45; i++)
+
+
 
             {
-                n = n - 1;
-                K = K + 5%
-                jahre++;
+                Console.Write("-");
             }
+            Console.WriteLine();
 
-            Console.WriteLine("Es dauert etwa {0} Jahre um das Kapital zu verdoppeln", jahre);
 
+
+
+
+            for (int i = 1; i <= n; i++)
+
+
+
+            {
+                Zinsen = K * (Zinssatz / 100);
+                Bilanz = K + Zinsen;
+                K_Zinsen = K_Zinsen + Zinsen;
+
+
+
+                Console.WriteLine($"{i,4} {K,10:F2} {Zinsen,8:F2} {K_Zinsen,10:F2} {Bilanz,8:F2}");
+
+
+
+                K = K + Zinsen;
+
+
+                if (i == n - 1)
+                {
+                    Console.WriteLine("---------------------------------------------");
+                }
+
+
+                //2. Lösungsart
+                //while (i == n - 1)
+                //{
+                //    Console.WriteLine("---------------------------------------------");
+                //    break;
+                //}
+            }
         }
     }
 }

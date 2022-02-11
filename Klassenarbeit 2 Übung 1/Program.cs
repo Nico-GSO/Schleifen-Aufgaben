@@ -8,7 +8,7 @@ namespace Klassenarbeit_2_Übung_1
         {
             double K = 0;
             double Zinssatz = 0;
-            int n = 0;
+            int jahre = 0;
             double Bilanz = 0;
             double Zinsen = 0;
             double K_Zinsen = 0;
@@ -26,7 +26,7 @@ namespace Klassenarbeit_2_Übung_1
 
 
             Console.WriteLine("Geben sie ihre Anlagedauer ein: ");
-            n = Convert.ToInt32(Console.ReadLine());
+            jahre = Convert.ToInt32(Console.ReadLine());
 
 
 
@@ -49,7 +49,7 @@ namespace Klassenarbeit_2_Übung_1
 
 
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= jahre; i++)
 
 
 
@@ -67,18 +67,19 @@ namespace Klassenarbeit_2_Übung_1
                 K = K + Zinsen;
 
 
-                if (i == n - 1)
+                if (i == jahre - 1)
                 {
                     Console.WriteLine("---------------------------------------------");
                 }
 
 
                 //2. Lösungsart
-                //while (i == n - 1)
+                //while (i == jahre - 1)
                 //{
                 //    Console.WriteLine("---------------------------------------------");
                 //    break;
                 //}
+
             }
         }
     }

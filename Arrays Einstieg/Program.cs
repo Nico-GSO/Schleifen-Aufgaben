@@ -6,8 +6,8 @@ namespace Arrays_Einstieg
     {
         static void Main(string[] args)
         {
-            int n = 20;
-            int[] noten = new int[20];
+            int n = 3;
+            int[] noten = new int[n];
 
             Console.WriteLine("Geben sie bitte {0} Noten ein um den Notendurchschnitt zu berechnen:", n);
 
@@ -17,20 +17,15 @@ namespace Arrays_Einstieg
             {
                 Console.WriteLine("Geben Sie die {0} Note ein",i+1);
                 noten[i] = Convert.ToInt32(Console.ReadLine());
+                Summe = Summe + noten[i];
             }
 
             Console.WriteLine("------------------------------------------------------");
-            Console.WriteLine("Der Notendurchschnitt lautet:  ");
+            Console.Write("Der Notendurchschnitt lautet: ");
 
+            Summe = Summe / noten.Length;
 
-            //for (int i = 0; i <= stringArray.Length - 1; i++)
-            //{
-            //    Console.WriteLine(stringArray[i]);
-            //}
-            //Summe = Summe / 20;
-
-            //Console.Write(Summe);
-
+            Console.WriteLine(Summe);
         }
     }
 }

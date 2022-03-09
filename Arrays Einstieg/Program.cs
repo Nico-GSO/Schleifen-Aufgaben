@@ -6,7 +6,7 @@ namespace Arrays_Einstieg
     {
         static void Main(string[] args)
         {
-            int n = 3;
+            int n = 20;
             int[] noten = new int[n];
 
             Console.WriteLine("Geben sie bitte {0} Noten ein um den Notendurchschnitt zu berechnen:", n);

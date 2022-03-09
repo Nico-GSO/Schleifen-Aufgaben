@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aufgabe 10", "Aufgabe 10\Au
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klassenarbeit 2 Übung 1", "Klassenarbeit 2 Übung 1\Klassenarbeit 2 Übung 1.csproj", "{AC8B9B09-F456-41FE-A91F-98652DA3073D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klassenarbeit 2 Übung 2", "Klassenarbeit 2 Übung 2\Klassenarbeit 2 Übung 2.csproj", "{EE072388-5D14-47C6-8EF3-4CD11CC12ACE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klassenarbeit 2 Übung 2", "Klassenarbeit 2 Übung 2\Klassenarbeit 2 Übung 2.csproj", "{EE072388-5D14-47C6-8EF3-4CD11CC12ACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays Einstieg", "Arrays Einstieg\Arrays Einstieg.csproj", "{2CC7B9F2-2F78-45DE-BB0E-1C9CDD28881E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{EE072388-5D14-47C6-8EF3-4CD11CC12ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE072388-5D14-47C6-8EF3-4CD11CC12ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE072388-5D14-47C6-8EF3-4CD11CC12ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC7B9F2-2F78-45DE-BB0E-1C9CDD28881E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC7B9F2-2F78-45DE-BB0E-1C9CDD28881E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC7B9F2-2F78-45DE-BB0E-1C9CDD28881E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC7B9F2-2F78-45DE-BB0E-1C9CDD28881E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

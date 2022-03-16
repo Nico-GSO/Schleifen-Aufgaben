@@ -34,7 +34,8 @@ namespace Array_Bubblesort
 
             for (int i = 0; i <= daten.Length - 1; i++)
             {
-                Console.WriteLine(daten[i]);
+                Console.Write(daten[i]);
+                Console.Write(", ");
             }
 
             //{ 45, 10, 15, 4 }

@@ -7,11 +7,12 @@ namespace Array_Bubblesort
         static void Main(string[] args)
         {
             double[] daten = { 45, 10, 15, 4 };
-            bool wiederholen = false;
+            bool wiederholen;
 
             do
-
             {
+
+                wiederholen = false;
 
                 for (int index = 0; index < daten.Length - 1; index++)
                 {

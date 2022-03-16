@@ -7,7 +7,7 @@ namespace Array_Bubblesort
         static void Main(string[] args)
         {
             double[] daten = { 45, 10, 15, 4 };
-            bool wiederholen == true;
+            bool wiederholen = false;
 
             do
 
@@ -16,7 +16,6 @@ namespace Array_Bubblesort
                 for (int index = 0; index < daten.Length - 1; index++)
                 {
 
-
                     if (daten[index] > daten[index + 1])
                     {
                         double buffer = daten[index + 1];
@@ -24,14 +23,18 @@ namespace Array_Bubblesort
                         daten[index + 1] = daten[index];
                         //{ 45, 45, 15, 4 }
                         daten[index] = buffer;
-                        bool = false;
+                        //{ 10, 45, 15, 4 }
+                        wiederholen = true;
                     }
-
 
                 }
 
-
             } while (wiederholen == true);
+
+            for (int i = 0; i <= daten.Length - 1; i++)
+            {
+                Console.WriteLine(daten[i]);
+            }
 
             //{ 45, 10, 15, 4 }
             //{ 10, 45, 15, 4 }

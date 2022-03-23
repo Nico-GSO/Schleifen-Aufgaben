@@ -6,17 +6,18 @@ namespace Methoden_implementieren_und_aufrufen
     {
         static void Main(string[] args)
         {
-            int durchlauf = 0;
+            string durchlauf;
             string text;
-
-
+            int num;
+            
+            
             bool richtig = true;
             do
             {
                 richtig = true;
                 Console.WriteLine("Geben sie bitte die Anzahl der Durchläufe ein:");
-                durchlauf = Convert.ToInt32(Console.ReadLine());
-                if (durchlauf < 1 | durchlauf > 1000 )
+                durchlauf = Console.ReadLine();
+                if (!Int32.TryParse(durchlauf, out num))
                 {
                     richtig = false;
                     Console.WriteLine("Bitte geben sie eine gültige Eingabe ein. Bitte drücken sie eine beliebige Taste um es erneut zu versuchen:");
@@ -28,27 +29,16 @@ namespace Methoden_implementieren_und_aufrufen
 
 
 
-            bool richtig2 = true;
-            do
-            {
-                richtig2 = true;
+            
+             
                 Console.WriteLine("Geben sie bitte ihren Text ein:");
                 text = Console.ReadLine();
-                if (durchlauf < 1 | durchlauf > 1000)
-                {
-                    richtig2 = false;
-                    Console.WriteLine("Bitte geben sie eine gültige Eingabe ein. Bitte drücken sie eine beliebige Taste um es erneut zu versuchen:");
-                    Console.ReadKey();
-                    Console.Clear();
-                }
-
-
-            } while (richtig2 == false);
+            
 
 
 
             int anzahl = 0;
-            anzahl = ausgabeTextMalX(durchlauf, text);
+            anzahl = ausgabeTextMalX(num, text);
 
             Console.Write("\nAnzahl der Buchstaben: {0}", anzahl);
 

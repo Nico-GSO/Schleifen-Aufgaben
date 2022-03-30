@@ -52,14 +52,8 @@ namespace Methoden_implementieren_und_aufrufen
                 Console.WriteLine(text);
             }
 
-            Console.WriteLine();
-
             return text.Length*durchlauf;
 
-
-
-        }
-
-        
+        }  
     }
 }
